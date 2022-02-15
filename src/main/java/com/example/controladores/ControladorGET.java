@@ -5,6 +5,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
+import javax.annotation.PostConstruct;
 import java.util.ArrayList;
 
 @RestController
@@ -42,6 +43,11 @@ public class ControladorGET {
         }else{
             return "No encontrado";
         }
+    }
+
+    @PostConstruct
+    public void doLog() {
+        System.out.println("Hola desde la clase inicial");
     }
 
 }

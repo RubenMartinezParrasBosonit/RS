@@ -2,6 +2,8 @@ package com.example.objetos;
 
 import org.springframework.stereotype.Service;
 
+import javax.annotation.PostConstruct;
+
 @Service("PersonaServiceImp")
 public class PersonaServiceImp implements PersonaService{
 
